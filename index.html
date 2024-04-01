@@ -1,0 +1,616 @@
+<html><head><link rel="stylesheet" href="swiss.css" type="text/css" /></head><body>
+<h1>500: Made for Readability</h1>
+
+<p>Initial code, provided for reference:</p>
+
+<pre><code>___=(lambda x:x);code=type(___.func_code);___.func_code=code(0,14,11,67,'q\x06\x00Xd\x00d\x01\x00d\x00\x00l\x00\x00}\x00\x00|\x00\x00j\x01\x00\x83\x00\x00}\x01\x00|\x01\x00j\x02\x00t\x03\x00j\x04\x00j\x05\x00\x83\x01\x00\x01|\x01\x00j\x06\x00\x83\x00\x00d\x02\x00k\x03\x00rM\x00t\x07\x00\x83\x00\x00\x01n\x00\x00n\x03\x00d\x00nd\x03\x00j\x08\x00g\x00\x00t\t\x00d\x04\x00t\n\x00g\x00\x00t\t\x00d\x05\x00\x83\x01\x00D]\x0c\x00}\x02\x00d\x06\x00^\x02\x00qr\x00\x83\x01\x00\x83\x02\x00D]\x12\x00}\x02\x00t\x0b\x00|\x02\x00\x83\x01\x00^\x02\x00q\x88\x00\x83\x01\x00}\x03\x00d\x01\x00d\x00\x00l\x0c\x00}\x04\x00q\xb5\x00Qd\x00t\r\x00j\x0e\x00}\x05\x00t\r\x00j\x0b\x00}\x06\x00t\r\x00j\t\x00}\x07\x00t\r\x00j\x0f\x00}\x08\x00n\x03\x00d\x00ny\x95\x00|\x05\x00|\x06\x00d\x07\x00d\x08\x00\x17\x83\x01\x00j\x10\x00\x83\x00\x00|\x06\x00|\x08\x00t\x11\x00d\t\x00d\n\x00\x13\x83\x01\x00\x83\x01\x00\x83\x01\x00\x17|\x06\x00d\x0b\x00d\x0c\x00d\r\x00\x13\x14\x83\x01\x00\x17|\x06\x00t\r\x00j\x0f\x00|\x04\x00j\x12\x00d\x0e\x00\x83\x01\x00\x83\x01\x00\x83\x01\x00\x17|\x06\x00t\n\x00g\x00\x00|\x07\x00d\x0f\x00d\x10\x00\x14\x83\x01\x00D]\x0c\x00}\x02\x00d\r\x00^\x02\x00qW\x01\x83\x01\x00\x83\x01\x00\x17\x83\x01\x00}\t\x00Wn\x13\x00\x01\x01\x01d\x03\x00GHt\x07\x00\x83\x00\x00\x01n\x01\x00X|\t\x00\x0cr\x9b\x01t\x07\x00\x83\x00\x00\x01n\x00\x00t\r\x00j\x13\x00}\n\x00t\r\x00j\x0b\x00}\x0b\x00t\r\x00j\x0f\x00}\x0c\x00t\r\x00j\x14\x00}\r\x00n\x02\x00Xn\x09|\t\x00d\x03\x00j\x08\x00|\x0b\x00d\x11\x00d\x12\x00\x14|\x0c\x00d\r\x00\x83\x01\x00?\x83\x01\x00|\x0b\x00d\x13\x00d\x10\x00\x14d\r\x00\x17\x83\x01\x00j\x15\x00\x83\x00\x00\x17d\x14\x00|\r\x00t\t\x00d\x12\x00\x83\x01\x00d\x01\x00\x19\x83\x01\x00\x17|\x0b\x00d\x10\x00d\x0b\x00\x13d\x10\x00d\x15\x00\x13\x17\x83\x01\x00\rd\x06\x00d\x01\x00!g\x03\x00\x83\x01\x00|\x03\x00d\x06\x00\x19\x17d\x03\x00j\x08\x00|\r\x00d\x06\x00\x83\x01\x00|\x03\x00t\x16\x00d\x16\x00\x83\x01\x00d\x04\x00\x18\x19|\x03\x00d\x17\x00\x19g\x03\x00\x83\x01\x00\x17d\x18\x00j\x15\x00\x83\x00\x00\x17|\r\x00d\x19\x00\x83\x01\x00j\x17\x00d\x10\x00\x83\x01\x00\x17d\x03\x00j\x08\x00|\n\x00|\x0b\x00|\x0c\x00|\x04\x00j\x12\x00d\x1a\x00\x83\x01\x00\x83\x01\x00d\r\x00d\r\x00&gt;d\x1b\x00\x14d\x0b\x00\x14d\x1c\x00d\x0c\x00d\x0c\x00\x14\x17t\x16\x00|\x03\x00d\x1d\x00\x19j\x10\x00\x83\x00\x00\x83\x01\x00g\x04\x00\x83\x02\x00\x83\x01\x00\x17k\x02\x00ro\x03t\x0b\x00t\x16\x00d\x1e\x00\x83\x01\x00d\x1f\x00\x18\x83\x01\x00t\x0b\x00d \x00\x83\x01\x00j\x15\x00\x83\x00\x00\x17t\x0b\x00t\x16\x00|\x03\x00d\x1d\x00\x19\x83\x01\x00\x83\x01\x00d\x10\x00\x14\x17d!\x00\x17|\x03\x00t\x18\x00|\x03\x00\x83\x01\x00d\x10\x00\x15\x1fd\x12\x00\x19\x17t\x0b\x00t\n\x00g\x00\x00t\t\x00d\x0f\x00\x83\x01\x00D]\x0c\x00}\x02\x00d\x10\x00^\x02\x00qM\x03d\r\x00g\x01\x00\x17\x83\x01\x00\x83\x01\x00\x17GHn\x00\x00d\x00\x00S',(None,-1,'\xb7\x1a\x86m\xa9\xb9Y\xec\x85\xe7\xad\x025\xe5\xaa\n','',97,41,3,50,69,592704,0.33333,7,10,1,3364,16,2,56,4,44,'t',6,'i',-8,'G',0,10000,5,17,13,'w',32,73,'e'),('hashlib','md5','update','___','func_code','co_code','digest','exit','join','range','sum','chr','math','__builtins__','raw_input','int','upper','round','sqrt','map','str','lower','ord','zfill','len'),('hashlib','\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b','\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b','\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b','math','\x1b\x5b\x30\x3b\x33\x30\x6d','\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b','\x1b\x5b\x30\x3b\x33\x30\x6d','\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b','\x1b\x5b\x3f\x32\x4a','map','str','eval','int'),'asdf','\x1b\x5b\x31\x41\x0a\x2a\x2a\x2a\x20\x53\x79\x6e\x74\x61\x78\x45\x72\x72\x6f\x72\x3a\x20\x53\x79\x6e\x74\x61\x78\x45\x72\x72\x6f\x72\x28\x27\x75\x6e\x65\x78\x70\x65\x63\x74\x65\x64\x20\x45\x4f\x46\x20\x77\x68\x69\x6c\x65\x20\x70\x61\x72\x73\x69\x6e\x67\x27\x2c\x20\x28\x27\x3c\x73\x74\x72\x69\x6e\x67\x3e\x27\x2c\x20\x30\x2c\x20\x30\x2c\x20\x27\x27\x29\x29',1,'\x00\x01');___();
+</code></pre>
+
+<h2>Step 1: Initial cleanup and deobfuscation</h2>
+
+<p>Splitting out the file into multiple lines (replacing all semicolons with newlines) only gives us so much. What we really need to understand is what this <code>code</code> type (and function, apparently) actually is. Understanding the arguments would be helpful, so let's start there:</p>
+
+<pre><code>&gt;&gt;&gt; import types
+&gt;&gt;&gt; help(types.CodeType)
+code(argcount, nlocals, stacksize, flags, codestring, constants, names,
+  varnames, filename, name, firstlineno, lnotab[, freevars[, cellvars]])
+
+Create a code object.  Not for the faint of heart.
+</code></pre>
+
+<p>Excellent, we now have names to map to the arguments. Let's look at a table explaining what these things do:</p>
+
+<p>(Taken from the <a href="https://docs.python.org/2/library/inspect.html">inspect module</a> documentation)</p>
+
+<table>
+    <thead>
+        <tr><th class="module">Module</th>  <th class="docname">Docs</th><th class="intname">Internal</th>      <th class="description">Description</th></tr>
+    </thead>
+    <tbody>
+        <tr><td class="module">code</td>    <td class="docname">argcount</td><td class="intname">co_argcount</td>        <td class="description">number of arguments (not including * or ** args)</td></tr>
+        <tr><td class="module"></td>        <td class="docname">nlocals</td><td class="intname">co_nlocals</td>          <td class="description">number of local variables</td></tr>
+        <tr><td class="module"></td>        <td class="docname">stacksize</td><td class="intname">co_stacksize</td>      <td class="description">virtual machine stack space required</td></tr>
+        <tr><td class="module"></td>        <td class="docname">flags</td><td class="intname">co_flags</td>              <td class="description">bitmap: 1=optimized | 2=newlocals | 4=*arg | 8=**arg</td></tr>
+        <tr><td class="module"></td>        <td class="docname">codestring</td><td class="intname">co_code</td>          <td class="description">string of raw compiled bytecode</td></tr>
+        <tr><td class="module"></td>        <td class="docname">constants</td><td class="intname">co_consts</td>         <td class="description">tuple of constants used in the bytecode</td></tr>
+        <tr><td class="module"></td>        <td class="docname">names</td><td class="intname">co_names</td>              <td class="description">tuple of names of local variables</td></tr>
+        <tr><td class="module"></td>        <td class="docname">varnames</td><td class="intname">co_varnames</td>        <td class="description">tuple of names of arguments and local variables</td></tr>
+        <tr><td class="module"></td>        <td class="docname">filename</td><td class="intname">co_filename</td>        <td class="description">name of file in which this code object was created</td></tr>
+        <tr><td class="module"></td>        <td class="docname">name</td><td class="intname">co_name</td>                <td class="description">name with which this code object was defined</td></tr>
+        <tr><td class="module"></td>        <td class="docname">firstlineno</td><td class="intname">co_firstlineno</td>  <td class="description">number of first line in Python source code</td></tr>
+        <tr><td class="module"></td>        <td class="docname">lnotab</td><td class="intname">co_lnotab</td>            <td class="description">encoded mapping of line numbers to bytecode indices</td></tr>
+    </tbody>
+</table>
+
+<p>by manually splitting out these arguments into similarly named variables, we get the following (still runnable) code:</p>
+
+<pre><code>___=(lambda x:x)
+code=type(___.func_code)
+
+# Arguments, broken out, with labels
+argcount=0
+nlocals=14
+stacksize=11
+flags=67
+codestring='q\x06\x00Xd\x00d\x01\x00d\x00\x00l\x00\x00}\x00\x00|\x00\x00j\x01\x00\x83\x00\x00}\x01\x00|\x01\x00j\x02\x00t\x03\x00j\x04\x00j\x05\x00\x83\x01\x00\x01|\x01\x00j\x06\x00\x83\x00\x00d\x02\x00k\x03\x00rM\x00t\x07\x00\x83\x00\x00\x01n\x00\x00n\x03\x00d\x00nd\x03\x00j\x08\x00g\x00\x00t\t\x00d\x04\x00t\n\x00g\x00\x00t\t\x00d\x05\x00\x83\x01\x00D]\x0c\x00}\x02\x00d\x06\x00^\x02\x00qr\x00\x83\x01\x00\x83\x02\x00D]\x12\x00}\x02\x00t\x0b\x00|\x02\x00\x83\x01\x00^\x02\x00q\x88\x00\x83\x01\x00}\x03\x00d\x01\x00d\x00\x00l\x0c\x00}\x04\x00q\xb5\x00Qd\x00t\r\x00j\x0e\x00}\x05\x00t\r\x00j\x0b\x00}\x06\x00t\r\x00j\t\x00}\x07\x00t\r\x00j\x0f\x00}\x08\x00n\x03\x00d\x00ny\x95\x00|\x05\x00|\x06\x00d\x07\x00d\x08\x00\x17\x83\x01\x00j\x10\x00\x83\x00\x00|\x06\x00|\x08\x00t\x11\x00d\t\x00d\n\x00\x13\x83\x01\x00\x83\x01\x00\x83\x01\x00\x17|\x06\x00d\x0b\x00d\x0c\x00d\r\x00\x13\x14\x83\x01\x00\x17|\x06\x00t\r\x00j\x0f\x00|\x04\x00j\x12\x00d\x0e\x00\x83\x01\x00\x83\x01\x00\x83\x01\x00\x17|\x06\x00t\n\x00g\x00\x00|\x07\x00d\x0f\x00d\x10\x00\x14\x83\x01\x00D]\x0c\x00}\x02\x00d\r\x00^\x02\x00qW\x01\x83\x01\x00\x83\x01\x00\x17\x83\x01\x00}\t\x00Wn\x13\x00\x01\x01\x01d\x03\x00GHt\x07\x00\x83\x00\x00\x01n\x01\x00X|\t\x00\x0cr\x9b\x01t\x07\x00\x83\x00\x00\x01n\x00\x00t\r\x00j\x13\x00}\n\x00t\r\x00j\x0b\x00}\x0b\x00t\r\x00j\x0f\x00}\x0c\x00t\r\x00j\x14\x00}\r\x00n\x02\x00Xn\x09|\t\x00d\x03\x00j\x08\x00|\x0b\x00d\x11\x00d\x12\x00\x14|\x0c\x00d\r\x00\x83\x01\x00?\x83\x01\x00|\x0b\x00d\x13\x00d\x10\x00\x14d\r\x00\x17\x83\x01\x00j\x15\x00\x83\x00\x00\x17d\x14\x00|\r\x00t\t\x00d\x12\x00\x83\x01\x00d\x01\x00\x19\x83\x01\x00\x17|\x0b\x00d\x10\x00d\x0b\x00\x13d\x10\x00d\x15\x00\x13\x17\x83\x01\x00\rd\x06\x00d\x01\x00!g\x03\x00\x83\x01\x00|\x03\x00d\x06\x00\x19\x17d\x03\x00j\x08\x00|\r\x00d\x06\x00\x83\x01\x00|\x03\x00t\x16\x00d\x16\x00\x83\x01\x00d\x04\x00\x18\x19|\x03\x00d\x17\x00\x19g\x03\x00\x83\x01\x00\x17d\x18\x00j\x15\x00\x83\x00\x00\x17|\r\x00d\x19\x00\x83\x01\x00j\x17\x00d\x10\x00\x83\x01\x00\x17d\x03\x00j\x08\x00|\n\x00|\x0b\x00|\x0c\x00|\x04\x00j\x12\x00d\x1a\x00\x83\x01\x00\x83\x01\x00d\r\x00d\r\x00&gt;d\x1b\x00\x14d\x0b\x00\x14d\x1c\x00d\x0c\x00d\x0c\x00\x14\x17t\x16\x00|\x03\x00d\x1d\x00\x19j\x10\x00\x83\x00\x00\x83\x01\x00g\x04\x00\x83\x02\x00\x83\x01\x00\x17k\x02\x00ro\x03t\x0b\x00t\x16\x00d\x1e\x00\x83\x01\x00d\x1f\x00\x18\x83\x01\x00t\x0b\x00d \x00\x83\x01\x00j\x15\x00\x83\x00\x00\x17t\x0b\x00t\x16\x00|\x03\x00d\x1d\x00\x19\x83\x01\x00\x83\x01\x00d\x10\x00\x14\x17d!\x00\x17|\x03\x00t\x18\x00|\x03\x00\x83\x01\x00d\x10\x00\x15\x1fd\x12\x00\x19\x17t\x0b\x00t\n\x00g\x00\x00t\t\x00d\x0f\x00\x83\x01\x00D]\x0c\x00}\x02\x00d\x10\x00^\x02\x00qM\x03d\r\x00g\x01\x00\x17\x83\x01\x00\x83\x01\x00\x17GHn\x00\x00d\x00\x00S'
+constants=(None,-1,'\xb7\x1a\x86m\xa9\xb9Y\xec\x85\xe7\xad\x025\xe5\xaa\n','',97,41,3,50,69,592704,0.33333,7,10,1,3364,16,2,56,4,44,'t',6,'i',-8,'G',0,10000,5,17,13,'w',32,73,'e')
+names=('hashlib','md5','update','___','func_code','co_code','digest','exit','join','range','sum','chr','math','__builtins__','raw_input','int','upper','round','sqrt','map','str','lower','ord','zfill','len')
+varnames=(
+    'hashlib',
+    '\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b',
+    '\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b',
+    '\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b',
+    'math',
+    '\x1b\x5b\x30\x3b\x33\x30\x6d',
+    '\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b',
+    '\x1b\x5b\x30\x3b\x33\x30\x6d',
+    '\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b',
+    '\x1b\x5b\x3f\x32\x4a',
+    'map',
+    'str',
+    'eval',
+    'int',
+)
+filename='asdf'
+name='\x1b\x5b\x31\x41\x0a\x2a\x2a\x2a\x20\x53\x79\x6e\x74\x61\x78\x45\x72\x72\x6f\x72\x3a\x20\x53\x79\x6e\x74\x61\x78\x45\x72\x72\x6f\x72\x28\x27\x75\x6e\x65\x78\x70\x65\x63\x74\x65\x64\x20\x45\x4f\x46\x20\x77\x68\x69\x6c\x65\x20\x70\x61\x72\x73\x69\x6e\x67\x27\x2c\x20\x28\x27\x3c\x73\x74\x72\x69\x6e\x67\x3e\x27\x2c\x20\x30\x2c\x20\x30\x2c\x20\x27\x27\x29\x29'
+firstlineno=1
+lnotab='\x00\x01'
+
+# Rebuild everything into a func_code object, load that back into ___ for execution
+___.func_code = code(argcount, nlocals, stacksize, flags, codestring, constants, names, varnames, filename, name, firstlineno, lnotab)
+
+___()
+</code></pre>
+
+<h2>Step 2: Disassembly, part 1</h2>
+
+<p>In order to start unwraveling this opaque mess of hex, we need to use our friend, the <code>dis</code> module.</p>
+
+<pre><code># At the top of the file
+from dis import dis
+
+...  # Build ___ function
+
+# At the bottom of the file, right before ___()
+dis(___)
+</code></pre>
+
+<p>When we run this, we are greeted with the following:</p>
+
+<pre><code>  2           0 JUMP_ABSOLUTE            6
+              3 END_FINALLY         
+              4 LOAD_CONST           25600
+Traceback (most recent call last):
+  File "writeup.py", line 38, in &lt;module&gt;
+    dis(___)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/dis.py", line 43, in dis
+    disassemble(x)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/dis.py", line 95, in disassemble
+    print '(' + repr(co.co_consts[oparg]) + ')',
+IndexError: tuple index out of range
+</code></pre>
+
+<p>We see <code>dis</code>, line 95 (in <code>disassemble</code>), attempting to access co.co_consts. The last successfully decoded opcode was <code>LOAD_CONST</code>, so that seems pretty plausable. We also wee it attempted to load the 25600th item in our consts list, which only has 34 elements. Fortunately, we've come to the first tricky part of this disassembly...</p>
+
+<h3>Misaligned Jumps</h3>
+
+<p>Python bytecode comes in three forms:</p>
+
+<ul>
+<li>1 byte wide (no arguments)</li>
+<li>3 bytes wide (two bites of arguments)</li>
+<li>3 bytes wide with extended arguments)</li>
+</ul>
+
+<p>Instruction 0, <code>JUMP_ABSOLUTE</code>, jumps to instruction offset 6, which is right in the middle of instruction 4's argument. Looking at <a href="http://hg.python.org/cpython/file/2.7/Lib/dis.py#l88">dis.py</a>, we see the following line:</p>
+
+<pre><code>oparg = ord(code[i]) + ord(code[i+1])*256 + extended_arg
+</code></pre>
+
+<p>The important bit is <code>ord(code[i]) + ord(code[i+1])*256</code>. This is where <code>dis</code> calculates the values to display as arguments to the various opcodes. Because we know we don't have 25600 constants, (and we know that we don't seem to be hitting that instruction anyway,) we can <code>NOP</code> those three instructions:</p>
+
+<pre><code>...
+
+def replace(c, i, s):
+    return c[:i] + s + c[i + len(s):]
+
+c = codestring
+
+c = replace(c, 4, '\x09')  # '\x09' is the hex for NOP. See the opcodes module for a reference to all opcodes.
+
+codestring = c
+
+# Rebuild everything into a func_code object, load that back into ___ for execution
+___.func_code=code(argcount, nlocals, stacksize, flags, codestring, constants, names, varnames, filename, name, firstlineno, lnotab)
+
+...
+</code></pre>
+
+<p>Running the script again, we now get:</p>
+
+<pre><code>  2           0 JUMP_ABSOLUTE            6
+              3 END_FINALLY         
+              4 NOP                 
+              5 NOP                 
+        &gt;&gt;    6 LOAD_CONST               1 (-1)
+              9 LOAD_CONST               0 (None)
+             12 IMPORT_NAME              0 (hashlib)
+             15 STORE_FAST               0 (hashlib)
+             18 LOAD_FAST                0 (hashlib)
+             21 LOAD_ATTR                1 (md5)
+             24 CALL_FUNCTION            0
+             27 LOAD_PENIS               0 ("cocks")
+             30 LOAD_PENIS               0 ("cocks")
+             33 LOAD_ATTR                2 (update)
+             36 LOAD_GLOBAL              3 (___)
+             39 LOAD_ATTR                4 (func_code)
+             42 LOAD_ATTR                5 (co_code)
+             45 CALL_FUNCTION            1
+             48 POP_TOP             
+             49 LOAD_PENIS               0 ("cocks")
+             52 LOAD_ATTR                6 (digest)
+             55 CALL_FUNCTION            0
+             58 LOAD_CONST               2 ('\xb7\x1a\x86m\xa9\xb9Y\xec\x85\xe7\xad\x025\xe5\xaa\n')
+             61 COMPARE_OP               3 (!=)
+             64 POP_JUMP_IF_FALSE       77
+             67 LOAD_GLOBAL              7 (exit)
+             70 CALL_FUNCTION            0
+             73 POP_TOP             
+             74 JUMP_FORWARD             0 (to 77)
+        &gt;&gt;   77 JUMP_FORWARD             3 (to 83)
+             80 LOAD_CONST           28160
+Traceback (most recent call last):
+  File "writeup.py", line 44, in &lt;module&gt;
+    dis(___)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/dis.py", line 43, in dis
+    disassemble(x)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/dis.py", line 95, in disassemble
+    print '(' + repr(co.co_consts[oparg]) + ')',
+IndexError: tuple index out of range
+</code></pre>
+
+<p>Great! Progress! Now we start to see...</p>
+
+<h3>Fake Opcodes</h3>
+
+<p>We can see three fake opcodes in this output, these being very obviously fake. They are all of the same format:</p>
+
+<pre><code>27 LOAD_PENIS               0 ("cocks")
+</code></pre>
+
+<p>This is clever, and happens to be taking advantage of terminal features. If you're using a GUI disassembler, you might breeze by this, not even realizing there's anything behind the garble of characters you're seeing. The secret here lies in some of the hex we glossed over in the beginning. Varnames contains some very interesting strings:</p>
+
+<pre><code>varnames=(
+    'hashlib',
+    '\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b',
+    '\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b',
+    '\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b',
+    'math',
+    '\x1b\x5b\x30\x3b\x33\x30\x6d',
+    '\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b',
+    '\x1b\x5b\x30\x3b\x33\x30\x6d',
+    '\x1b\x5b\x32\x38\x44\x4c\x4f\x41\x44\x5f\x50\x45\x4e\x49\x53\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x30\x20\x28\x22\x63\x6f\x63\x6b\x73\x22\x1b\x5b\x4b',
+    '\x1b\x5b\x3f\x32\x4a',
+    'map',
+    'str',
+    'eval',
+    'int',
+)
+</code></pre>
+
+<p>We can use the Python REPL to help us uncover the mystery:</p>
+
+<pre><code>&gt;&gt;&gt; varnames = ...  # Paste in the "varnames" block
+&gt;&gt;&gt; from pprint import pprint
+&gt;&gt;&gt; pprint(varnames)
+('hashlib',
+ '\x1b[28DLOAD_PENIS               0 ("cocks"\x1b[K',
+ '\x1b[28DLOAD_PENIS               0 ("cocks"\x1b[K',
+ '\x1b[28DLOAD_PENIS               0 ("cocks"\x1b[K',
+ 'math',
+ '\x1b[0;30m',
+ '\x1b[28DLOAD_PENIS               0 ("cocks"\x1b[K',
+ '\x1b[0;30m',
+ '\x1b[28DLOAD_PENIS               0 ("cocks"\x1b[K',
+ '\x1b[?2J',
+ 'map',
+ 'str',
+ 'eval',
+ 'int')
+</code></pre>
+
+<p>Here we see <code>LOAD_PENIS</code>, surrounded by some escape sequences. These are actually character movement commands (documented <a href="http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/x361.html">here</a>), that move the cursor, then write <code>LOAD_PENIS</code> over the actual opcode, then erase the rest of the line just in case. We can remove our obstruction by emptying the strings that contain the offending codes, replacing them with helpful names. This leaves:</p>
+
+<pre><code>varnames=(
+    'hashlib',
+    'var2',
+    'var3',
+    'var4',
+    'math',
+    '\x1b\x5b\x30\x3b\x33\x30\x6d',
+    'var7',
+    '\x1b\x5b\x30\x3b\x33\x30\x6d',
+    'var9',
+    '\x1b\x5b\x3f\x32\x4a',
+    'map',
+    'str',
+    'eval',
+    'int',
+)
+</code></pre>
+
+<p>Running the script again gives:</p>
+
+<pre><code>  2           0 JUMP_ABSOLUTE            6
+              3 END_FINALLY         
+              4 NOP                 
+              5 STOP_CODE           
+        &gt;&gt;    6 LOAD_CONST               1 (-1)
+              9 LOAD_CONST               0 (None)
+             12 IMPORT_NAME              0 (hashlib)
+             15 STORE_FAST               0 (hashlib)
+             18 LOAD_FAST                0 (hashlib)
+             21 LOAD_ATTR                1 (md5)
+             24 CALL_FUNCTION            0
+             27 STORE_FAST               1 (var2)
+             30 LOAD_FAST                1 (var2)
+             33 LOAD_ATTR                2 (update)
+             36 LOAD_GLOBAL              3 (___)
+             39 LOAD_ATTR                4 (func_code)
+             42 LOAD_ATTR                5 (co_code)
+             45 CALL_FUNCTION            1
+             48 POP_TOP             
+             49 LOAD_FAST                1 (var2)
+             52 LOAD_ATTR                6 (digest)
+             55 CALL_FUNCTION            0
+             58 LOAD_CONST               2 ('\xb7\x1a\x86m\xa9\xb9Y\xec\x85\xe7\xad\x025\xe5\xaa\n')
+             61 COMPARE_OP               3 (!=)
+             64 POP_JUMP_IF_FALSE       77
+             67 LOAD_GLOBAL              7 (exit)
+             70 CALL_FUNCTION            0
+             73 POP_TOP             
+             74 JUMP_FORWARD             0 (to 77)
+        &gt;&gt;   77 JUMP_FORWARD             3 (to 83)
+             80 LOAD_CONST           28160
+</code></pre>
+
+<p>We're doing well! We've eliminated the weird opcodes, and can now continue with what we started in the previous section, <em>Misaligned Jumps</em>. Let's resume with:</p>
+
+<h3>Iteratively fixing misaligned jumps</h3>
+
+<p>Our next target must be the instruction at offset 80, since the previous instruction jumps to 83 (which is the second byte of <code>LOAD_CONST</code>'s arguments). We can replace this with another <code>NOP</code> like so:</p>
+
+<pre><code>c = codestring
+
+c = replace(c, 4, '\x09')
+c = replace(c, 80, '\x09')
+
+codestring = c
+</code></pre>
+
+<p>which gets us here:</p>
+
+<pre><code>            ...
+            172 STORE_FAST               4 (math)
+            175 JUMP_ABSOLUTE          181
+            178 WITH_CLEANUP        
+            179 LOAD_CONST           29696
+Traceback (most recent call last):
+  File "writeup.py", line 49, in &lt;module&gt;
+    dis(___)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/dis.py", line 43, in dis
+    disassemble(x)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/dis.py", line 95, in disassemble
+    print '(' + repr(co.co_consts[oparg]) + ')',
+IndexError: tuple index out of range
+</code></pre>
+
+<p>Again, we see instruction 175 jumping to 181. By <code>NOP</code>ping 179, we can continue:</p>
+
+<pre><code>            ...
+            172 STORE_FAST               4 (math)
+            175 JUMP_ABSOLUTE          181
+            178 WITH_CLEANUP        
+            179 NOP                 
+            180 STOP_CODE           
+        &gt;&gt;  181 LOAD_GLOBAL             13 (__builtins__)
+            184 LOAD_ATTR               14 (raw_input)
+            187 STORE_FAST               5 (
+</code></pre>
+
+<p>This is good, but where's the rest of my disassembly? Now my terminal is all black, and my cursor is gone! What gives? As it happens, we've run into:</p>
+
+<h3>More anti-disassembly tricks</h3>
+
+<p>Let's go back to our friendly <code>varnames</code>, and look at some of those other weird escapes:</p>
+
+<pre><code>varnames=(
+    'hashlib',
+    'var2',
+    'var3',
+    'var4',
+    'math',
+    '\x1b[0;30m',  # First
+    'var7',
+    '\x1b[0;30m',  # Second
+    'var9',
+    '\x1b[?2J',    # Third
+    'map',
+    'str',
+    'eval',
+    'int',
+)
+</code></pre>
+
+<p>The first an second escape sequences are the same, and sure enough they're the escape sequences for "turn text color black". There's a reasonably good chance you're using some lighter color on black. If you're not, you breezed through this, so good for you.</p>
+
+<pre><code>varnames=(
+    'hashlib',
+    'var2',
+    'var3',
+    'var4',
+    'math',
+    'var6',      # First
+    'var7',
+    'var8',      # Second
+    'var9',
+    '\x1b[?2J',  # Third
+    'map',
+    'str',
+    'eval',
+    'int',
+)
+</code></pre>
+
+<p>The rest of us can remove those escape sequences and proceed with...</p>
+
+<h3>More misaligned jumps</h3>
+
+<p>We are now presented with:</p>
+
+<pre><code>            ...
+            211 LOAD_ATTR               15 (int)
+            214 STORE_FAST               8 (var9)
+            217 JUMP_FORWARD             3 (to 223)
+            220 LOAD_CONST           28160
+Traceback (most recent call last):
+  File "writeup.py", line 50, in &lt;module&gt;
+    dis(___)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/dis.py", line 43, in dis
+    disassemble(x)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/dis.py", line 95, in disassemble
+    print '(' + repr(co.co_consts[oparg]) + ')',
+IndexError: tuple index out of range
+</code></pre>
+
+<p>Fine, 220 is hiding 223, the target of 217:</p>
+
+<pre><code>c = codestring
+
+c = replace(c, 4, '\x09')
+c = replace(c, 80, '\x09')
+c = replace(c, 179, '\x09')
+c = replace(c, 220, '\x09')
+
+codestring = c
+</code></pre>
+
+<p>Running it again, and now we get:</p>
+
+<pre><code>            ...
+            874 PRINT_ITEM          
+            875 PRINT_NEWLINE       
+            876 JUMP_FORWARD             0 (to 879)
+        &gt;&gt;  879 LOAD_CONST               0 (None)
+            882 RETURN_VALUE
+</code></pre>
+
+<p>Holy crap, it looks like it worked! Let's move on to...</p>
+
+<h3>Self-verifying code</h3>
+
+<p>We're finally successfully disassembled, but in all our haste, we've somehow broken the function. We didn't notice it earlier, since <code>dis</code> kept breaking, but we don't see the friendly <code>WTF:</code> prompt anymore. Fortunately, none of the code we've replaced so far could break anything, since they weren't the jump targets for any other instructions. That leaves one other interesting possibility, which is hinted at in the beginning of our disassembly:</p>
+
+<pre><code>        ...
+         12 IMPORT_NAME              0 (hashlib)
+         15 STORE_FAST               0 (hashlib)
+         18 LOAD_FAST                0 (hashlib)
+         21 LOAD_ATTR                1 (md5)
+         24 CALL_FUNCTION            0
+         27 STORE_FAST               1 (var2)
+         30 LOAD_FAST                1 (var2)
+         33 LOAD_ATTR                2 (update)
+         36 LOAD_GLOBAL              3 (___)
+         39 LOAD_ATTR                4 (func_code)
+         42 LOAD_ATTR                5 (co_code)
+         45 CALL_FUNCTION            1
+         48 POP_TOP             
+         49 LOAD_FAST                1 (var2)
+         52 LOAD_ATTR                6 (digest)
+         55 CALL_FUNCTION            0
+         58 LOAD_CONST               2 ('\xb7\x1a\x86m\xa9\xb9Y\xec\x85\xe7\xad\x025\xe5\xaa\n')
+         61 COMPARE_OP               3 (!=)
+         64 POP_JUMP_IF_FALSE       77
+         67 LOAD_GLOBAL              7 (exit)
+         70 CALL_FUNCTION            0
+        ...
+</code></pre>
+
+<p>Fumbling through these opcodes, we can mentally reconstruct the code that must have generated this:</p>
+
+<pre><code>import hashlib
+
+var2 = hashlib.md5()
+var2.update(___.func_code.co_code)
+if var2.digest() != '\xb7\x1a\x86m\xa9\xb9Y\xec\x85\xe7\xad\x025\xe5\xaa\n':
+    exit()
+</code></pre>
+
+<p>Neat! Self-verifying code! All we really need to do here is make sure our hash matches what's being tested for. Searching through the file for that md5 digest, we find it nestled in with the other constants:</p>
+
+<pre><code>...
+constants=(None,-1,
+    '\xb7\x1a\x86m\xa9\xb9Y\xec\x85\xe7\xad\x025\xe5\xaa\n',
+    '',97,41,3,50,69,592704,0.33333,7,10,1,3364,16,2,56,4,44,'t',6,'i',-8,'G',0,10000,5,17,13,'w',32,73,'e'
+)
+...
+</code></pre>
+
+<p>In order to extract this, we'll need to actually build an md5 hash of our modified code. Let's move the constants block underneath where we're modifying the code, and add the following modifications to insert the correct digest:</p>
+
+<pre><code>import hashlib
+
+codehash = hashlib.md5(codestring).digest()
+constants = (None,-1, codehash, '',97,41,3,50,69,592704,0.33333,7,10,1,3364,16,2,56,4,44,'t',6,'i',-8,'G',0,10000,5,17,13,'w',32,73,'e')
+#                     ^^^^^^^^
+</code></pre>
+
+<p>We can see here, we've replaced the actual hash with our completely dynamically generated hash. This ensures that we'll always pass code validation. Let's run again, just to make sure:</p>
+
+<pre><code>            ...
+            873 BINARY_ADD          
+            874 PRINT_ITEM          
+            875 PRINT_NEWLINE       
+            876 JUMP_FORWARD             0 (to 879)
+        &gt;&gt;  879 LOAD_CONST               0 (None)
+            882 RETURN_VALUE        
+WTF: Woohoo!
+</code></pre>
+
+<p>Excellent! We're back with the <code>WTF:</code> prompt! Let's take a quick break to resync code before continuing:</p>
+
+<h2>Code sync break</h2>
+
+<pre><code>import hashlib
+from dis import dis
+
+___=(lambda x:x)
+code=type(___.func_code)
+
+# Arguments, broken out, with labels
+argcount=0
+nlocals=14
+stacksize=11
+flags=67
+codestring='q\x06\x00Xd\x00d\x01\x00d\x00\x00l\x00\x00}\x00\x00|\x00\x00j\x01\x00\x83\x00\x00}\x01\x00|\x01\x00j\x02\x00t\x03\x00j\x04\x00j\x05\x00\x83\x01\x00\x01|\x01\x00j\x06\x00\x83\x00\x00d\x02\x00k\x03\x00rM\x00t\x07\x00\x83\x00\x00\x01n\x00\x00n\x03\x00d\x00nd\x03\x00j\x08\x00g\x00\x00t\t\x00d\x04\x00t\n\x00g\x00\x00t\t\x00d\x05\x00\x83\x01\x00D]\x0c\x00}\x02\x00d\x06\x00^\x02\x00qr\x00\x83\x01\x00\x83\x02\x00D]\x12\x00}\x02\x00t\x0b\x00|\x02\x00\x83\x01\x00^\x02\x00q\x88\x00\x83\x01\x00}\x03\x00d\x01\x00d\x00\x00l\x0c\x00}\x04\x00q\xb5\x00Qd\x00t\r\x00j\x0e\x00}\x05\x00t\r\x00j\x0b\x00}\x06\x00t\r\x00j\t\x00}\x07\x00t\r\x00j\x0f\x00}\x08\x00n\x03\x00d\x00ny\x95\x00|\x05\x00|\x06\x00d\x07\x00d\x08\x00\x17\x83\x01\x00j\x10\x00\x83\x00\x00|\x06\x00|\x08\x00t\x11\x00d\t\x00d\n\x00\x13\x83\x01\x00\x83\x01\x00\x83\x01\x00\x17|\x06\x00d\x0b\x00d\x0c\x00d\r\x00\x13\x14\x83\x01\x00\x17|\x06\x00t\r\x00j\x0f\x00|\x04\x00j\x12\x00d\x0e\x00\x83\x01\x00\x83\x01\x00\x83\x01\x00\x17|\x06\x00t\n\x00g\x00\x00|\x07\x00d\x0f\x00d\x10\x00\x14\x83\x01\x00D]\x0c\x00}\x02\x00d\r\x00^\x02\x00qW\x01\x83\x01\x00\x83\x01\x00\x17\x83\x01\x00}\t\x00Wn\x13\x00\x01\x01\x01d\x03\x00GHt\x07\x00\x83\x00\x00\x01n\x01\x00X|\t\x00\x0cr\x9b\x01t\x07\x00\x83\x00\x00\x01n\x00\x00t\r\x00j\x13\x00}\n\x00t\r\x00j\x0b\x00}\x0b\x00t\r\x00j\x0f\x00}\x0c\x00t\r\x00j\x14\x00}\r\x00n\x02\x00Xn\x09|\t\x00d\x03\x00j\x08\x00|\x0b\x00d\x11\x00d\x12\x00\x14|\x0c\x00d\r\x00\x83\x01\x00?\x83\x01\x00|\x0b\x00d\x13\x00d\x10\x00\x14d\r\x00\x17\x83\x01\x00j\x15\x00\x83\x00\x00\x17d\x14\x00|\r\x00t\t\x00d\x12\x00\x83\x01\x00d\x01\x00\x19\x83\x01\x00\x17|\x0b\x00d\x10\x00d\x0b\x00\x13d\x10\x00d\x15\x00\x13\x17\x83\x01\x00\rd\x06\x00d\x01\x00!g\x03\x00\x83\x01\x00|\x03\x00d\x06\x00\x19\x17d\x03\x00j\x08\x00|\r\x00d\x06\x00\x83\x01\x00|\x03\x00t\x16\x00d\x16\x00\x83\x01\x00d\x04\x00\x18\x19|\x03\x00d\x17\x00\x19g\x03\x00\x83\x01\x00\x17d\x18\x00j\x15\x00\x83\x00\x00\x17|\r\x00d\x19\x00\x83\x01\x00j\x17\x00d\x10\x00\x83\x01\x00\x17d\x03\x00j\x08\x00|\n\x00|\x0b\x00|\x0c\x00|\x04\x00j\x12\x00d\x1a\x00\x83\x01\x00\x83\x01\x00d\r\x00d\r\x00&gt;d\x1b\x00\x14d\x0b\x00\x14d\x1c\x00d\x0c\x00d\x0c\x00\x14\x17t\x16\x00|\x03\x00d\x1d\x00\x19j\x10\x00\x83\x00\x00\x83\x01\x00g\x04\x00\x83\x02\x00\x83\x01\x00\x17k\x02\x00ro\x03t\x0b\x00t\x16\x00d\x1e\x00\x83\x01\x00d\x1f\x00\x18\x83\x01\x00t\x0b\x00d \x00\x83\x01\x00j\x15\x00\x83\x00\x00\x17t\x0b\x00t\x16\x00|\x03\x00d\x1d\x00\x19\x83\x01\x00\x83\x01\x00d\x10\x00\x14\x17d!\x00\x17|\x03\x00t\x18\x00|\x03\x00\x83\x01\x00d\x10\x00\x15\x1fd\x12\x00\x19\x17t\x0b\x00t\n\x00g\x00\x00t\t\x00d\x0f\x00\x83\x01\x00D]\x0c\x00}\x02\x00d\x10\x00^\x02\x00qM\x03d\r\x00g\x01\x00\x17\x83\x01\x00\x83\x01\x00\x17GHn\x00\x00d\x00\x00S'
+names=('hashlib','md5','update','___','func_code','co_code','digest','exit','join','range','sum','chr','math','__builtins__','raw_input','int','upper','round','sqrt','map','str','lower','ord','zfill','len')
+varnames=(
+    'hashlib',
+    'var2',
+    'var3',
+    'var4',
+    'math',
+    'var6',
+    'var7',
+    'var8',
+    'var9',
+    '\x1b\x5b\x3f\x32\x4a',
+    'map',
+    'str',
+    'eval',
+    'int',
+)
+filename='asdf'
+name='\x1b\x5b\x31\x41\x0a\x2a\x2a\x2a\x20\x53\x79\x6e\x74\x61\x78\x45\x72\x72\x6f\x72\x3a\x20\x53\x79\x6e\x74\x61\x78\x45\x72\x72\x6f\x72\x28\x27\x75\x6e\x65\x78\x70\x65\x63\x74\x65\x64\x20\x45\x4f\x46\x20\x77\x68\x69\x6c\x65\x20\x70\x61\x72\x73\x69\x6e\x67\x27\x2c\x20\x28\x27\x3c\x73\x74\x72\x69\x6e\x67\x3e\x27\x2c\x20\x30\x2c\x20\x30\x2c\x20\x27\x27\x29\x29'
+firstlineno=1
+lnotab='\x00\x01'
+
+
+def replace(c, i, s):
+    return c[:i] + s + c[i + len(s):]
+
+c = codestring
+
+c = replace(c, 4, '\x09')
+c = replace(c, 80, '\x09')
+c = replace(c, 179, '\x09')
+c = replace(c, 220, '\x09')
+
+codestring = c
+
+codehash = hashlib.md5(codestring).digest()
+constants = (None,-1, codehash, '',97,41,3,50,69,592704,0.33333,7,10,1,3364,16,2,56,4,44,'t',6,'i',-8,'G',0,10000,5,17,13,'w',32,73,'e')
+
+# Rebuild everything into a func_code object, load that back into ___ for execution
+___.func_code=code(argcount, nlocals, stacksize, flags, codestring, constants, names, varnames, filename, name, firstlineno, lnotab)
+
+dis(___)
+___()
+</code></pre>
+
+<p>Looking at the disassembly, we can make out a lot of different kinds of things going on. Fortunately, we don't care about most of this, we just care about the result. One way to short-cut all the reversing and decompilation is to find critical parts of the codebase and insert <code>PRINT_ITEM</code> statements.</p>
+
+<pre><code>            716 LOAD_ATTR               16 (upper)
+            719 CALL_FUNCTION            0
+            722 CALL_FUNCTION            1
+            725 BUILD_LIST               4
+            728 CALL_FUNCTION            2
+            731 CALL_FUNCTION            1
+            734 BINARY_ADD          
+            735 COMPARE_OP               2 (==)
+            738 POP_JUMP_IF_FALSE      879
+            741 LOAD_GLOBAL             11 (chr)
+            744 LOAD_GLOBAL             22 (ord)
+            747 LOAD_CONST              30 ('w')
+            750 CALL_FUNCTION            1
+            753 LOAD_CONST              31 (32)
+            756 BINARY_SUBTRACT
+</code></pre>
+
+<p>Close to the end of the disassembly, we find a <code>COMPARE_OP</code>. This looks promising, since comparison operates on the top two positions on the stack. We might get lucky, since we suspect this code gets input and compares it against the password. By replacing offsets 735 and 736 with <code>PRINT_ITEM</code>, we can expect two things from the stack to be printed, probably after we enter our guess password:</p>
+
+<pre><code>c = codestring
+
+c = replace(c, 4, '\x09')
+c = replace(c, 80, '\x09')
+c = replace(c, 179, '\x09')
+c = replace(c, 220, '\x09')
+
+c = replace(c, 735, '\x47')  # \x47 is the code for PRINT_ITEM
+c = replace(c, 736, '\x47')  # \x47 is the code for PRINT_ITEM
+
+codestring = c
+</code></pre>
+
+<p>When we run, we get the familiar <code>WTF:</code> prompt. This time, let's enter anything:</p>
+
+<pre><code>            ...
+            870 CALL_FUNCTION            1
+            873 BINARY_ADD          
+            874 PRINT_ITEM          
+            875 PRINT_NEWLINE       
+            876 JUMP_FORWARD             0 (to 879)
+        &gt;&gt;  879 LOAD_CONST               0 (None)
+            882 RETURN_VALUE        
+WTF: woo
+XXX lineno: 2, opcode: 0
+pyt3c0d3isg00dFuN woo
+Traceback (most recent call last):
+  File "writeup.py", line 58, in &lt;module&gt;
+    ___()
+*** SyntaxError: SyntaxError('unexpected EOF while parsing', ('&lt;string&gt;', 0, 0, ''))
+SystemError: unknown opcode
+</code></pre>
+
+<p>Darn, it crashed. But wait! What's that in the rubble? It's the key!</p>
+</body></html>
